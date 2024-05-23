@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../images/logo_fondo2.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/medico.css">
+    <title>Alertma</title>
+</head>
+<body>
+    <header class="head">
+        <div class="head1">
+            <img src="../images/logo_fondo2.png" alt="Logo">
+            <h1>Alert <h1 id="tma">ma</h1></h1>
+            
+        </div>
+        <div class="head2">
+            <nav>
+                <a href="">Home</a>
+                <a href="">Info</a>
+                <a href="">Date</a>
+                <a href="">Blog</a>
+                <a href="">Contact</a>
+            </nav>
+        </div>
+        <div>
+            <h2>Username</h2>
+        </div>
+    </header>
+
+    <main>
+        <div class="recetar">
+            <div class="recetar2">
+                <div class="datos">
+                    <h2>Paciente</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat ratione explicabo voluptatem! Quo esse sit ea, rerum optio id debitis, porro eaque excepturi quae ut deserunt deleniti, a unde dolorum.</p>
+                </div>
+                <div class="datos2">
+                    <form action="" id="formulario" class="formu">
+                        <label for="">Medicamento: </label>
+                        <select name="medicina" id="med">
+                            <option value=""></option>
+                                <option value="Tamoxifeno">Tamoxifeno (Nolvadex)</option>
+                                <option value="Anastrozol">Anastrozol (Arimidex)</option>
+                                <option value="Letrozol">Letrozol (Femara)</option>
+                                <option value="Exemestano">Exemestano (Aromasin)</option>
+                                <option value="Trastuzumab">Trastuzumab (Herceptin)</option>
+                                <option value="Palbociclib">Palbociclib (Ibrance)</option>
+                        </select>
+                        <label for="">Dosis (mg):</label>
+                        <input type="number" id="dosiss" placeholder="Dosis medicamento">
+                        <label for="">Tiempo: </label>
+                        <input type="date" id="time">
+                        
+                        
+                    </form>
+                    <form action="" class="formu">
+                        <label for="">Medicamento: </label>
+                        <select name="medicina">
+                            <option value=""></option>
+                                <option value="Tamoxifeno">Tamoxifeno (Nolvadex)</option>
+                                <option value="Anastrozol">Anastrozol (Arimidex)</option>
+                                <option value="Letrozol">Letrozol (Femara)</option>
+                                <option value="Exemestano">Exemestano (Aromasin)</option>
+                                <option value="Trastuzumab">Trastuzumab (Herceptin)</option>
+                                <option value="Palbociclib">Palbociclib (Ibrance)</option>
+                        </select>
+                        <label for="">Dosis (mg):</label>
+                        <input type="number"  placeholder="Dosis medicamento">
+                        <label for="">Tiempo: </label>
+                        <input type="date">
+                    </form>
+                </div>
+                <div class="rec">
+                    <label for="">Recomendaciones:</label>
+                    <textarea name="text" id="text"></textarea>
+                </div>
+                
+            </div>
+            <div class="enviar">
+                <a href="#" onclick="sendMed()">Enviar</a>
+            </div>
+            
+            
+            
+        </div>
+
+    </main>
+
+
+</body>
+</html>
+
+<script>
+
+    let datos = [["Medicamento","Dosis","Tiempo"]];
+    function sendMed(){
+        const med = document.getElementById("med").value;
+        const dosis = document.getElementById("dosiss").value;
+        const time = document.getElementById("time").value;
+        const rec = document.getElementById("text").value;
+
+        let lista = [];
+        lista.push(med,dosis,time,rec);
+        datos.push(lista);
+        localStorage.setItem("datos", JSON.stringify(datos));
+        alert("Datos enviados.");
+
+
+    }
+
+</script>
