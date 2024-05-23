@@ -3,12 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="../images/logo_fondo2.png" type="image/x-icon">
+    <link rel="shortcut icon" href="..//images/logo_fondo2.png" type="image/x-icon">
     <title>Document</title>
 </head>
 <body>
     <div class="tarjet">
-        <div class="tarjet1"><h1>Alertma</h1></div>
+        <div class="tarjet1">
+            <h1>Alertma</h1>
+            <h2>Ocaña</h2>
+            <h2>Dra. Luisa Ovallos</h2>
+            <h4>Oncóloga Profesional</h4>
+            <h4>UFPSO</h4>
+            <h5>Cédula Profesional 101010</h5>
+            <h6>Plataforma Alertma, prototipo</h6>
+
+        </div>
         <div class="tarjet2">
             <h2>Tu receta médica</h2>
             <p id="recomendaciones"></p>
@@ -19,7 +28,6 @@
                         <td>Dosis</td>
                         <td>Frecuencia</td>
                         <td>Duración</td>
-                        <td>Ver</td>
                     </tr>
                 </table>
             </div>
@@ -45,15 +53,28 @@
         width: 80%;
         height: auto;
         margin: 10vh 10%;
+        padding-top:20px ;
     }
     .tarjet1{
         border-bottom: #d3d3d3 2px solid;
+        font-size: small;
+        margin-bottom: 15px;
+        width: 100vh;
+    }
+    .tarjet1 h1,h2,h4,h5,h6{
+        color: #9b9595;
+        margin-top: -15px;
     }
     .tarjet2{
         display: grid;
         justify-content: center;
         align-items: center;
         text-align: center;
+        margin-top: 20px;
+        color: gray;
+    }
+    .tarjet2 h2{
+        color: #303030;
     }
     .diva{
         margin-top: 30px;
@@ -74,6 +95,7 @@
         text-align: center;
         display: flex;
         justify-content: center;
+        color: black;
     }
     #tabla{
         border:gray 2px solid;
@@ -97,8 +119,41 @@
         let datos2 = JSON.parse(datos);
 
         let receta = localStorage.getItem('valor');
+
+        let number = datos2[receta][1];
+            let tiempo;
+            let dss;
+            let vm;
+
+            if (datos2[receta][0] == 'Tamoxifeno'){
+                dss = 20;
+                vm = 6;
+            }
+            else if(datos2[receta][0] == 'Anastrozol'){
+                dss = 1;
+                vm = 2;
+            }
+            else if(datos[receta][0] == 'Letrozol'){
+                dss = 2.5;
+                vm = 3;
+                
+            }
+            else if(datos[receta][0] == 'Exemestano'){
+                dss = 25;
+                vm = 1;
+            }
+            else if(datos[receta][0] == 'Trastuzumab'){
+                dss = 7;
+                vm = 5;
+            }
+            else if(datos[receta][0] == 'Palbociclib'){
+                dss = 125;
+                vm = 1.083;
+            }
+            tiempo = Math.round(vm*(1+(dss/number)));
+            
         document.getElementById("recomendaciones").innerText = datos2[receta][3];
-        document.getElementById("tabla").innerHTML += "<tr><td>"+datos2[receta][0]+"</td>"+"<td>"+datos2[receta][1]+"</td><td></td><td>"+datos2[receta][2]+"</td><td><a href='#'>Ver</a></td></tr>"
+        document.getElementById("tabla").innerHTML += "<tr><td>"+datos2[receta][0]+"</td>"+"<td>"+datos2[receta][1]+"</td><td>"+tiempo+" días</td><td>"+datos2[receta][2]+"</td></tr>"
 
     });
 </script>

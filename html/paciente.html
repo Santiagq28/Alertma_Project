@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="../images/logo_fondo2.png" type="image/x-icon">
+    <link rel="shortcut icon" href="..//images/logo_fondo2.png" type="image/x-icon">
     <link rel="stylesheet" href="../css/paciente.css">
     <title>Alertma</title>
 </head>
@@ -130,7 +130,7 @@
     
         </div>
 
-        <div class="container" style="background-color: rgb(253, 248, 248); padding: 50px 0px;">
+        <div class="container" style="background-color: #f8dede; padding: 50px 0px;">
             <div class="not1">
                 <h2>Recordatorios</h2>
                 <p>Utilizar los recordatorios de AlertMa te ayudará a llevar un control más riguroso de tu tratamiento, asegurando que no se te pase nada por alto y que sigas tu plan de tratamiento de manera efectiva. Tu salud y bienestar son nuestra prioridad, y estos recordatorios están diseñados para apoyarte en cada paso del camino.</p>
@@ -244,14 +244,48 @@
         let datos2 = JSON.parse(datos);
         
 
-        for(let y = 1;y<datos2.length;y++){
-                document.getElementById("tabla").innerHTML += "<tr><td>"+datos2[y][0]+"</td>"+"<td>"+datos2[y][1]+"</td><td></td><td>"+datos2[y][2]+"</td><td><a href='recetas.html' onclick='saveValue(id)' id='"+y+"'>Ver</a></td></tr>"
-                console.log(document.getElementById("tabla").value)
+        for(let y = 1;y<datos2.length;y++){let med = document.getElementById("medicamento").value;
+
+            let number = datos2[y][1];
+            let tiempo;
+            let dss;
+            let vm;
+
+            if (datos2[y][0] == 'Tamoxifeno'){
+                dss = 20;
+                vm = 6;
+            }
+            else if(datos2[y][0] == 'Anastrozol'){
+                dss = 1;
+                vm = 2;
+            }
+            else if(datos[y][0] == 'Letrozol'){
+                dss = 2.5;
+                vm = 3;
+                
+            }
+            else if(datos[y][0] == 'Exemestano'){
+                dss = 25;
+                vm = 1;
+            }
+            else if(datos[y][0] == 'Trastuzumab'){
+                dss = 7;
+                vm = 5;
+            }
+            else if(datos[y][0] == 'Palbociclib'){
+                dss = 125;
+                vm = 1.083;
+            }
+            tiempo = Math.round(vm*(1+(dss/number)));
+
+            document.getElementById("tabla").innerHTML += "<tr><td>"+datos2[y][0]+"</td>"+"<td>"+datos2[y][1]+"</td><td>"+tiempo+" días</td><td>"+datos2[y][2]+"</td><td><a href='recetas.html' onclick='saveValue(id)' id='"+y+"'>Ver</a></td></tr>"
+            console.log(document.getElementById("tabla").value)
         }
 
         console.table(datos2);
 
     });
+
     function saveValue(valor){
         const valor2 = valor;
         localStorage.setItem('valor', valor2);

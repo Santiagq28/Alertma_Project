@@ -408,7 +408,7 @@ nav a:hover{
 }
 #maps3 a{
     padding: 5px 15px;
-    background-color: rgba(10, 96, 125, 0.8); 
+    background-color: #0a607dcc; 
     color: white;
     border-radius: 5px;
     text-decoration: none;
@@ -424,7 +424,7 @@ nav a:hover{
     justify-content: center; 
     align-items: center; 
     width: 100%; 
-    background-color: rgba(173, 216, 230, 0.8); 
+    background-color: #0a607dcc; 
     color: white; 
     padding-top: 24px; 
 
