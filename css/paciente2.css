@@ -1,4 +1,6 @@
-
+* {
+    box-sizing: border-box;
+}
 
 body{
     margin: 0 auto; 
@@ -154,7 +156,6 @@ nav a:hover{
 
 .cont3{
     display: flex;
-    width: 100%;
     background-color: #fdf8f8;
     align-items: center;
     justify-content: center;
@@ -443,6 +444,10 @@ nav a:hover{
     }
     .info_cal{
         font-size: 14px;
+        width: 100%;
+        margin-left: 0px;
+        margin: 0px;
+        padding: 20px;
     }
     .reco{
         display: grid;
@@ -462,6 +467,25 @@ nav a:hover{
     #maps3 a{
         font-size: 16px;
         margin-bottom: 18px;
+    }
+    .description2{
+        margin-left: 0px;
+        left: 0px;
+        font-size: 3rem; 
+    }
+    .description{
+        margin-left: 0px;
+        left: 0px;
+    }
+    #tabla{
+        padding: 0px;
+    }
+    #tabla tr,td{
+        padding: 0px;
+    }
+    iframe{
+        width: 300px;
+        height: 200px;
     }
 }
 @media (max-width:1100px){
