@@ -1,3 +1,6 @@
+* {
+    box-sizing: border-box;
+}
 body{
     margin: 0 auto;
     background-color: #F2F2F2;
@@ -23,8 +26,8 @@ body{
     color: white;
 }
 .head1 img{
-    width: 30px;
-    height: 30px;
+    width: 7vh;
+    height: auto;
     padding: 0px 6px;
 }
 .head2 nav{
@@ -66,7 +69,6 @@ nav a:hover{
 }
 .formu{
     text-align: left;
-    width: 50%;
     height: 300px;
     padding: 10px;
 }
@@ -105,4 +107,17 @@ nav a:hover{
 }
 .enviar a:hover{
     border: 2px solid black;
+}
+
+@media (max-width:700px){
+    body{
+        width: 100%;
+        height: 100%;
+    }
+    .head2 nav a{
+        display:none;
+    }
+    .datos2{
+        display: grid;
+    }
 }
