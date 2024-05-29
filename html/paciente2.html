@@ -207,6 +207,7 @@
 </body>
 </html>
 
+
 <script>
     
     document.addEventListener('DOMContentLoaded', function(){
@@ -215,6 +216,9 @@
         const record = document.getElementById("records");
         const lista = document.getElementById("lista");
         const send = document.getElementById("send");
+
+        
+          
 
         send.addEventListener('click',function(event){
             event.preventDefault;
@@ -249,7 +253,7 @@
         let datos2 = JSON.parse(datos);
         
 
-        for(let y = 1;y<datos2.length;y++){let med = document.getElementById("medicamento").value;
+        for(let y = 1;y<datos2.length();y++){let med = document.getElementById("medicamento").value;
 
             let number = datos2[y][1];
             let tiempo;

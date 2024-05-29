@@ -448,10 +448,21 @@ nav a:hover{
     justify-content: center; 
     align-items: center; 
     width: 100%; 
-    background-color: #617ea7; 
+    background-color: #465c7a;
     color: white; 
     padding-top: 24px; 
+    padding-bottom: 24px;
 
+}
+.information2{
+    display: flex;
+    gap: 30px;
+    font-size: 13px;
+}
+.information2 img{
+    width: 10vh;
+    height: auto;
+    border-radius: 20px;
 }
 
 @media (max-width:650px){
@@ -510,6 +521,10 @@ nav a:hover{
     iframe{
         width: 300px;
         height: 200px;
+    }
+    .information2{
+        padding: 0px 10px;
+        gap: 20px;
     }
 }
 @media (max-width:1100px){

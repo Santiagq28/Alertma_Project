@@ -1,3 +1,4 @@
+
 :root {
 	--primario: #f48dde;
 	--secundario: #540545;
@@ -10,7 +11,8 @@
 }
 
 body {
-	background: #eddef8;
+	
+    background: linear-gradient(to right,#F575A6,#85AADF);
 	font-family: 'Quicksand', sans-serif;
 
 	min-height: 100vh;
