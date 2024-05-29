@@ -4,7 +4,8 @@ body{
 }
 
 .head{ 
-    background-color:  rgba(255, 182, 193, 0.8);
+    /*background-color:  #ffb6c1cc;*/
+    background-color: #FFD6FF;
     height: 10vh;
     width: 100%;
     display: flex;

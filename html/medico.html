@@ -16,7 +16,7 @@
         </div>
         <div class="head2">
             <nav>
-                <a href="">Home</a>
+                <a href="../index.html">Home</a>
                 <a href="">Info</a>
                 <a href="">Date</a>
                 <a href="">Blog</a>
@@ -24,7 +24,7 @@
             </nav>
         </div>
         <div>
-            <h2>Username</h2>
+            <h2 id="nameg">Médico</h2>
         </div>
     </header>
 
@@ -36,7 +36,7 @@
                     <p>Aquí puedes enviar recetas médicas a tus pacientes, teniendo en cuenta sus datos y las recomendaciones. A través de Alertma el paciente verá estas recetas en su respectiva plataforma.</p>
                 </div>
                 <div class="datos2">
-                    <form action="" class="formu">
+                    <form action="" class="formu" id="formulario2">
                         <label for="">Nombre: </label>
                         <input type="text" id="name" placeholder="Nombre Apellido...">
                         <label for="">Edad:</label>
@@ -107,7 +107,8 @@
         localStorage.setItem("datos", JSON.stringify(datos));
         alert("Datos enviados.");
 
-
+        document.getElementById("formulario").reset();
+        document.getElementById("formulario2").reset();
     }
 
 </script>

@@ -10,7 +10,7 @@
 }
 
 body {
-	background: #F0F4F3;
+	background: #eddef8;
 	font-family: 'Quicksand', sans-serif;
 
 	min-height: 100vh;
@@ -24,7 +24,7 @@ body {
 	max-width: 800px;
 	border-radius: 10px;
 	overflow: hidden;
-	box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+	box-shadow: #110c2e26 0px 48px 100px 0px;
 	background: #fff;
 	min-height: 60vh;
 
@@ -48,7 +48,7 @@ body {
 }
 
 .header h1 {
-	color: var(--primario);
+	color: #f5b4f5;
 }
 
 .header p {
@@ -147,7 +147,7 @@ input:focus {
 }
 
 #boton:hover {
-	background: var(--primario);
+	background: #f5b4f5;
 	color: #fff;
 }
 

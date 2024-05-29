@@ -4,12 +4,18 @@ body {
     height: 100vh;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center;/*
     background: linear-gradient(to right, 
-        rgba(255, 182, 193, 0.4) 0%, 
-        rgba(255, 182, 193, 0.4) 50%, 
-        rgba(173, 216, 230, 0.4) 50%, 
-        rgba(173, 216, 230, 0.4) 100%);
+        #ffb8c166 0%, 
+        #ffb6c166 50%, 
+        #add8e666 50%, 
+        #add8e666 100%);
+        background: linear-gradient(to right, 
+        #ffD6ff 0%, 
+        #ffD6ff 50%, 
+        #BBD0FF 50%, 
+        #BBD0FF 100%);*/
+    background: linear-gradient(to right,#F575A6,#85AADF);
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
@@ -29,7 +35,7 @@ body {
     background-position: center;
     background-repeat: no-repeat;
 }
-
+/*
 .izquierda {
     background-image: url("../images/editM-removebg-preview.png");
 }
@@ -37,11 +43,12 @@ body {
 .derecha {
     background-image: url("../images/editH-removebg-preview.png");
 }
-
+*/
 .container {
     position: relative;
-    z-index: 10;
-    background-color: #ffb6c1cc; 
+    z-index: 10;/*
+    background-color: #ffb6c1cc;*/ 
+    background-color: white;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px #0000001a;
@@ -53,7 +60,8 @@ body {
 }
 
 .cuadro {
-    background-color: white;
+    /*background-color: #C8B6FF;*/
+    background: linear-gradient(to right,#F575A6,#85AADF);
     padding: 20px;
     border-radius: 10px;
     margin: 5%;
@@ -67,11 +75,11 @@ body {
 .cuadro h2 {
     margin-bottom: 20px;
     font-size: 24px;
-    color: #ff1493; 
+    color: white; 
 }
 
 .cuadro h2 span, .cuadro h2 span:last-child {
-    color: #1e90ff; 
+    color: white; 
 }
 
 .cuadro a {
@@ -79,28 +87,30 @@ body {
     margin: 10px 0;
     padding: 10px;
     text-decoration: none;
-    color: black;
+    color: #F575A6;
+    font-weight: 600;
     font-size: 18px;
-    border: 2px solid rgba(0, 0, 0, 0); 
-    transition: border 0.3s ease, color 0.3s ease, background-color 0.3s ease; /* Transición suave para el borde, color y fondo */
-    background-color: rgba(173, 216, 230, 0.8); 
+    border: 2px solid #00000000; /*
+    transition: border 0.3s ease, color 0.3s ease, background-color 0.3s ease;  Transición suave para el borde, color y fondo 
+    background-color: #add8e6cc; */
+    background-color: white;
     text-align: center;
     border-radius: 4px;
     height: 65px;
 }
 
 .cuadro a:hover {
-    color: #1E90FF; 
-    background-color: #add8e6cc; 
-    border: #F2A7AD;
+    color: #F575A6; 
+    background-color: #FFFFFF; 
+    border: #F575A6 2px solid;
     height: 120px;
     transition-duration: 150ms;
 }
 
 .cuadro p {
-    color: black; 
+    color: #F575A6; 
     margin: 5px 0 0 0;
-    background-color: #add8e6cc;
+    background-color: white;
     visibility: hidden;
     font-size: 14px;
     border-radius: 10px;

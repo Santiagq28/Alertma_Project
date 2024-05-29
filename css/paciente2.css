@@ -4,17 +4,20 @@
 
 body{
     margin: 0 auto; 
-    background-color: white;
+    /*background-color: white;*/
+    background-color: #FFFFFF;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .head{ 
-    background-color:  #ffb6c1;
+    /*background-color:  #ffb6c1cc;*/
+    background-color: #FFFFFF;
     height: 10vh;
     width: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    color: white;
+    color: #F575A6;
     font-size: 1.1rem;
 }
 .head1{
@@ -23,7 +26,7 @@ body{
     font-size:smaller;
 }
 #tma {
-    color: white;
+    color: #F575A6;
 }
 .head1 img{
     width: 7vh;
@@ -37,24 +40,32 @@ body{
 }
 nav a{
     text-decoration: none;
-    color: white;
+    color: #000000;
 }
 nav a:hover{
     text-decoration: overline;
     color: #f70354;
 }
 
+#nameg{
+    background: linear-gradient(to right,#F575A6,#85AADF);
+    border-radius: 10px;
+    color: white;
+    padding: 5px 20px;
+}
+
+
+
 .presentation{
     display: flex;
     flex-direction: column;
-    justify-content: center;
     gap: 3px;
     width: 100%;
-    background-image: url(../images/p8.jpg);
-    color: #FFFFFF;
+    /*background-image: url(../images/p8.jpg);*/
+    background-color: #FFFFFF;
+    color: #F575A6;
     height: 80vh;
     overflow: hidden;
-    text-align: center;   
     background-size: cover;
     background-position: 60% 60%;
     background-position-x: 100%; 
@@ -81,10 +92,13 @@ nav a:hover{
     position: absolute; 
     top: 20px; 
     left: 20px; 
+    color: #F575A6;
+    /*
     color: transparent; 
     background: linear-gradient(to right, rgb(255, 102, 128), rgba(102, 217, 255, 0.8)); 
     -webkit-background-clip: text; 
     background-clip: text;
+    */
 }
 
 
@@ -95,14 +109,17 @@ nav a:hover{
     align-items: flex-start;
     justify-content: flex-start;
     margin-left: 2rem;
-    margin-top: 250px; 
+    margin-top: 280px; 
     position: absolute; 
     top: 10px; 
     left: 20px; 
+    color: #F575A6;
+    /*
     color: transparent; 
     background: linear-gradient(to right, rgb(255, 102, 128), rgba(102, 217, 255, 0.8)); 
     -webkit-background-clip: text; 
     background-clip: text;
+    */
 }
 
 
@@ -130,7 +147,7 @@ nav a:hover{
     display: grid;
     text-align: center;
     justify-content: center;
-    background-color: #f0ecec;
+    background-color: #F575A6;
     padding: 10%;
 }
 .divtabla h6{
@@ -139,16 +156,17 @@ nav a:hover{
     margin-bottom: -1px;
 }
 #tabla{
-    border:gray 2px solid;
+    border:black 2px solid;
     padding: 6px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: white;
   
 }
 #tabla tr,td{
     padding: 6px;
 }
 #enca{
-    background-color: #cfcece;
+    background-color: #F575A6;
     border: #cfcece 0px solid;
     font-weight: 600;
 
@@ -156,7 +174,7 @@ nav a:hover{
 
 .cont3{
     display: flex;
-    background-color: #fdf8f8;
+    background-color: #F795C7;
     align-items: center;
     justify-content: center;
     text-align: center;
@@ -170,24 +188,29 @@ nav a:hover{
 #dosis{
     display: grid;
     gap: 5px;
-    border: #e6dada 1px solid;
+    border: #FFFFFF 1px solid;
     padding: 14px;
     font-size: large;
-    background-color: #f5d7d7;
+    background-color: #FFFFFF;
     border-radius: 5px;
 }
 #dosis select{
     border: 1px white solid;
     padding: 5px;
+    background-color: #F795C7;
+    color: white;
 }
 #dosis input{
     border: 1px white solid;
     padding: 5px;
+    background-color: #F795C7;
+    color: white;
 }
+
 
 .info_cal{
     width: 60vh;
-    color: rgba(172, 113, 109, 0.8);
+    color: #FFFFFF;
     margin: 20px;
     margin-left: 50px;
     font-size: 20px;
@@ -201,24 +224,23 @@ nav a:hover{
 
 .button2{
     padding: 10px;
-    background-color: white;
+    background: linear-gradient(to right,#F575A6,#85AADF);
     margin: 0px 50px;
     border-radius: 10px;
+    color: white;
 }
 .button2:hover{
     cursor: pointer;
-    border: 2px solid #3E6980;
+    border: 2px solid #000000;
 }
 
 .card_container {
-    background-color: white;
+    background-color: #C4B5E0;
     display: grid; 
     justify-content: center; 
     align-items: center;
     gap: 20px;
-    padding: 20px 0px;
-    margin: 50px 0px;
-    padding-top: 60px; 
+    padding: 60px 0px;
 }
 
 .card_container .header-text {
@@ -283,9 +305,10 @@ nav a:hover{
 
 .card .back {
     transform: perspective(600px) rotateY(180deg);
-    background: rgba(173, 216, 230, 0.8);
+    /*background: #add8e6cc;*/
+    background: linear-gradient(to right,#F575A6,#85AADF);
     padding: 15px;
-    color: rgba(16, 98, 126, 0.8);
+    color: #ffffff;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -350,15 +373,15 @@ nav a:hover{
 }
 #formRecord1 input{
     border-radius: 5px;
-    border: #F2D0D0 2px solid;
+    border: #85AAdF 2px solid;
     background-color: white;
     margin-bottom: 10px;
 }
 
 #send,#view{
     margin-top: 10px;
-    background-color: #F2A7AD;
-    border: #F2A7AD 1px solid;
+    background: linear-gradient(to right,#F575A6,#85AADF);
+    border: #85AADf 1px solid;
     border-radius: 10px;
     padding: 5px 10px;
     color: white;
@@ -366,27 +389,27 @@ nav a:hover{
 }
 #send:hover,#view:hover{
     cursor: pointer;
-    background-color: white;
-    color: #F2A7AD;
+    background: linear-gradient(to right,#Ffffff,#ffffff);
+    color: #85AADF;
     transition: 200ms;
 }
 #records{
     margin-left: 10px;
     padding-left: 10px;
-    border-left: 2px solid #F2A7AD;
+    border-left: 2px solid #85aadf;
     text-align: center;
 }
 
 #maps{
-    margin: 10% 1% 2% 0%;
+    margin: 50px 10px 10px 10px;
     display: flex;
 }
 #map{
-    background-color:gray;
+    background-color:#85AADF;
     padding: 10px;
 }
 #maps2{
-    background-color: rgba(234, 242, 245, 0.8);
+    background-color: #85AADF;
     display: grid;
     margin: 0px 20px;
     text-align: center;
@@ -408,11 +431,12 @@ nav a:hover{
 }
 #maps3 a{
     padding: 5px 15px;
-    background-color: #0a607dcc; 
+    background: linear-gradient(to right,#F575A6,#85AADF);
+    border: 2px solid white;
     color: white;
     border-radius: 5px;
     text-decoration: none;
-    font-size: 35px;
+    font-size: 25px;
     cursor: pointer;
 }
 #maps3 a:hover{
@@ -424,7 +448,7 @@ nav a:hover{
     justify-content: center; 
     align-items: center; 
     width: 100%; 
-    background-color: #0a607dcc; 
+    background-color: #617ea7; 
     color: white; 
     padding-top: 24px; 
 
