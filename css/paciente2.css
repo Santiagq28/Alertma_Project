@@ -502,4 +502,11 @@ nav a:hover{
         background-color: gray;
     }
 }
+@media (max-width:400px){
+    .description{
+        font-size: 4rem; 
+    }.description2{
+        font-size: 2rem;
+    }
+}
 
