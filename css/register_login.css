@@ -50,7 +50,7 @@ body {
 }
 
 .header h1 {
-	color: #f5b4f5;
+	color: #F575A6;
 }
 
 .header p {
@@ -149,7 +149,7 @@ input:focus {
 }
 
 #boton:hover {
-	background: #f5b4f5;
+	background: #F575A6;
 	color: #fff;
 }
 

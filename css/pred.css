@@ -5,6 +5,12 @@ body{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 .head{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    max-width: 100%;
+    z-index: 1000000;
     background-color: #FFFFFF;
     height: 10vh;
     width: 100%;
@@ -53,7 +59,7 @@ nav a:hover{
     justify-content: center;
     align-items: center;
     width: 100%;
-    margin-top: 20px;
+    margin-top: 90px;
 }
 .title{
     color: black;
@@ -71,14 +77,16 @@ nav a:hover{
     justify-content: center;
 }
 .pred2{
-    background-color: #F575A6;
+    background-color: #FFFFFF;
+    border: 3px solid #F575A6;
+    border-radius: 10px;
     max-width: 50vh;
     display: grid;
     justify-content: center;
     align-items: center;
     padding: 40px;
     margin: 20px;
-    color: white;
+    color: #F575A6;
 }
 .pred2 img{
     max-width: 100%; 
@@ -92,7 +100,9 @@ nav a:hover{
     text-align: center;
 }
 .quest{
-    background-color: #F575A6;
+    background-color: #FFFFFF;
+    border: 3px solid #F575A6;
+    border-radius: 10px;
     padding: 10px 20px;
     margin: 20px 10px;
     text-align: center;
@@ -103,6 +113,7 @@ nav a:hover{
 .quest a{
     padding: 10px 5px;
     background-color: white;
+    border: #F575A6 2px solid;
     border-radius: 5px;
     text-decoration: none;
     color: #F575A6;
@@ -118,7 +129,7 @@ nav a:hover{
 }
 .quest input{
     border-radius: 5px;
-    border: #ffffff 1px solid;
+    border: #F575A6 1px solid;
     background-color: #ffff;
     padding: 10px 5px;
 }
@@ -127,22 +138,23 @@ nav a:hover{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 15px;
     font-weight: 600;
-    color: white;
+    color: #F575A6;
 }
 .quest select{
     background-color: #ffffff;
     border-radius: 5px;
-    border: #ffffff 1px solid;
+    border: #F575A6 1px solid;
     color: #000203;
     padding: 10px 5px;
 }
 .quest select:hover{
-    border:1px solid #ffffff;
+    border:1px solid #F575A6;
 }
 .btn-continuar {
     display: inline-block;
     padding: 10px 20px;
     background-color: #ffffff; 
+    border: 2px solid #F575A6;
     color: #F575A6;
     text-decoration: none;
     border-radius: 5px;

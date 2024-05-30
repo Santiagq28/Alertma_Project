@@ -3,10 +3,17 @@
 }
 body{
     margin: 0 auto;
-    background-color: #85AADF;
+    background-color: #FFFFFF;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .head{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    max-width: 100%;
+    z-index: 1000000;
     background-color: #FFFFFF;
     height: 10vh;
     width: 100%;
@@ -14,16 +21,16 @@ body{
     justify-content: space-around;
     align-items: center;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: #85AADF;
+    color: #F575A6;
 }
 .head1{
     display: flex;
     align-items: center;
-    color: #85AADF;
+    color: #F575A6;
     font-size:smaller;
 }
 #tma {
-    color: #85AADF;
+    color: #F575A6;
 }
 .head1 img{
     width: 7vh;
@@ -41,7 +48,7 @@ nav a{
 }
 nav a:hover{
     text-decoration: overline;
-    color: #85AADF;
+    color: #F575A6;
 }
 #nameg{
     background: linear-gradient(to right,#F575A6,#85AADF);
@@ -51,7 +58,8 @@ nav a:hover{
 }
 
 .recetar{
-    background-color: #85AADF;
+    margin-top: 80px;
+    background-color: #FFFFFF;
     display: grid;
     align-items: center;
     justify-content: center;
@@ -62,24 +70,30 @@ nav a:hover{
     width: 50%;
 }
 .datos{
-    color: white;
+    color: #85AADF;
     text-align: left;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 .datos h2{
+    color: #85AADF;
     font-size: 30px;
+    text-align: center;
 }
 .datos2{
     display: flex;
     justify-content: center;
+    gap: 10px;
 }
 .formu{
     text-align: left;
     height: 300px;
     padding: 10px;
+    border: 2px solid #85AADF;
+    border-radius: 10px;
+    
 }
 .formu input,#time,select{
-    border: white 1px solid;
+    border: #85AADF 2px solid;
     border-radius: 5px;
     height: 20%;
     width: 100%;
@@ -96,7 +110,7 @@ nav a:hover{
 
 }
 .rec textarea{
-    border: white 1px solid;
+    border: #85AADF 2px solid;
     border-radius: 5px;
     height: 150px;
 }
@@ -105,6 +119,7 @@ nav a:hover{
     margin:30px;
 }
 .enviar a{
+    border: 2px solid #85AADF;
     background-color: white;
     padding: 10px;
     border-radius: 10px;
@@ -115,6 +130,28 @@ nav a:hover{
     border: 2px solid white;
     color: white;
     background: linear-gradient(to right,#F575A6,#85AADF);
+}
+
+.information{
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    width: 100%; 
+    background-color: #465c7a;
+    color: white; 
+    padding-top: 24px; 
+    padding-bottom: 24px;
+
+}
+.information2{
+    display: flex;
+    gap: 30px;
+    font-size: 13px;
+}
+.information2 img{
+    width: 10vh;
+    height: auto;
+    border-radius: 20px;
 }
 
 @media (max-width:700px){

@@ -11,6 +11,12 @@ body{
 
 .head{ 
     /*background-color:  #ffb6c1cc;*/
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    max-width: 100%;
+    z-index: 1000000;
     background-color: #FFFFFF;
     height: 10vh;
     width: 100%;
@@ -440,7 +446,8 @@ nav a:hover{
     cursor: pointer;
 }
 #maps3 a:hover{
-    background-color: #61a3c7;
+    background: linear-gradient(to right,white,white);
+    color: #85AADF;
 }
 
 .information{
